@@ -1,0 +1,15 @@
+{% extends "base/recipe_base.html" %}
+{% block body %}
+
+<div id="clock"></div>
+<br>
+<a class="index" href="{% url 'recipe:page_create' %}">レシピを書く</a>
+<br>
+<a class="index" href="{% url 'recipe:page_list' %}">レシピ一覧</a>
+<br>
+<form class="index" action="{% url 'accounts:logout' %}" method="POST">
+    {% csrf_token %}
+    <button type="submit">ログアウト</button>
+</form>
+
+{% endblock %}

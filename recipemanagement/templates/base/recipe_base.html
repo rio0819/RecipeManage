@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>マイレシピ帳</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'recipe/css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'recipe/css/index.css' %}">
+        <link rel="stylesheet" href="{% static 'recipe/css/page_form.css' %}"> 
+        <link rel="stylesheet" href="{% static 'recipe/css/page_list.css' %}">
+        <link rel="stylesheet" href="{% static 'recipe/css/page_detail.css' %}">
+        <link rel="stylesheet" href="{% static 'recipe/css/page_update.css' %}">
+        <link rel="stylesheet" href="{% static 'recipe/css/page_confirm_delete.css' %}">
+        <script src="{% static 'recipe/js/base.js' %}"></script>
+    </head>
+    <body>
+        <h1><a href="{% url 'recipe:index' %}">マイレシピ帳</a></h1>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

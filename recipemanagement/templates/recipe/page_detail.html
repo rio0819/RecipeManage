@@ -1,0 +1,17 @@
+{% extends "base/recipe_base.html" %}
+{% load custom_filter %}
+{% block body %}
+
+<h2>{{ page.title }}</h2>
+{% if page.picture %}
+    <img src="{{ page.picture.url }}"/>
+{% endif %}
+<div class="detail">調理時間: {{ page.cook_time|format_cook_time }}</div>
+<div class="detail">{{ page.material | linebreaksbr }}</div>
+<div class="detail">{{ page.recipe | linebreaksbr }}</div>
+
+<br>
+<a class="detail" href="{% url 'recipe:page_update' page.id %}">編集</a>
+<a class="detail" href="{% url 'recipe:page_confirm_delete' page.id %}">削除</a>
+
+{% endblock %}

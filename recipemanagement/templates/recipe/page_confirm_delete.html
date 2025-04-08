@@ -1,0 +1,15 @@
+{% extends "base/recipe_base.html" %}
+{% block body %}
+
+<form class="delete" method="POST">
+    {% csrf_token %}
+    <p>このページを削除しますか？</p>
+    <button type="submit">削除</button>
+</form>
+<h2>{{ page.title }}</h2>
+{% if page.picture %}
+    <img src="{{ page.picture.url }}"/>
+{% endif %}
+<br>
+
+{% endblock %}

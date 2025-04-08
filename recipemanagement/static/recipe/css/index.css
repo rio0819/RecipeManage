@@ -1,0 +1,47 @@
+/* 時計のスタイル */
+#clock {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* .index クラスのリンクスタイル */
+a.index {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a.index:hover {
+    background-color: #45a049;
+}
+
+/* .index クラスのフォームスタイル */
+form.index {
+    display: inline-block; /* フォームを中央揃え */
+    text-align: center;
+}
+
+/* .index クラスのボタンスタイル */
+form.index button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form.index button:hover {
+    background-color: #d32f2f;
+}

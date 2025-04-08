@@ -1,0 +1,41 @@
+/* リスト全体のスタイル */
+ul {
+    list-style-type: none; /* デフォルトのリストスタイルを削除 */
+    padding: 0;
+    margin: 0;
+    display: flex; /* 横並びにする */
+    flex-wrap: wrap; /* 要素が多い場合に折り返す */
+    gap: 20px; /* 各要素間のスペース */
+    justify-content: center; /* 中央揃え */
+}
+
+/* リスト内の各要素のスタイル */
+ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px; /* 各要素の幅を固定 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* リンクのスタイル */
+ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+ul li a:hover {
+    color: #45a049;
+}
+
+/* 画像のスタイル */
+ul li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
